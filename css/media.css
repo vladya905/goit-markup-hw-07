@@ -1,0 +1,135 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+  .container.big-container {
+    max-width: 428px;
+  }
+}
+
+.section-work {
+  padding: 0;
+}
+.work-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 582px;
+
+    outline: 2px solid tomato;
+  }
+  .container.big-container {
+    min-width: 736px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding: 108px 96px;
+  }
+  .section.big-section {
+    padding: 96px 16px;
+  }
+
+  .hero-title {
+    margin-bottom: 36px;
+    font-size: 56px;
+    width: 496px;
+  }
+
+  .feauters-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .features-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .section-work {
+    padding: 0;
+  }
+  .work-container {
+    display: none;
+  }
+  .team-item {
+    width: calc (100% / 2);
+  }
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+  .team-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .customers-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .customers-link {
+    width: 168px;
+    height: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 120px 0;
+  }
+  .section.big-section {
+    padding: 120px 0;
+  }
+  .container.big-container {
+    min-width: 1158px;
+  }
+  .container {
+    min-width: 1158px;
+    outline: 2px solid tomato;
+  }
+  .feauters-link {
+    display: flex;
+  }
+  .feauter-text {
+    font-weight: 400;
+  }
+  .feauters-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .features-item {
+    min-width: 264px;
+  }
+  .section-subtitle-mob {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .section-work {
+    padding-top: 0;
+  }
+  .work-container {
+    display: block;
+  }
+  .work-list {
+    display: flex;
+    gap: 24px;
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .team-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .customers-link {
+    gap: 24px;
+  }
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+}
