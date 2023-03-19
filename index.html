@@ -18,12 +18,76 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="./index.html" class="logo"
+          <a href="./index.html" class="header-logo"
             >Web<span class="span-header">Studio</span></a
           >
+          <button type="button" class="menu-button" data-menu-open>
+            <svg class="menu-icon">
+              <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+          <div class="menu is-hidden" data-menu>
+            <div>
+              <button type="button" class="menu-close" data-menu-close>
+                <svg class="menu-close-icon">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="mob-nav list">
+                <li><a href="./index.html" class="link current">Studio</a></li>
+                <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+                <li><a href="#" class="link">Contacts</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="address-mob list">
+                <li>
+                  <a href="tel:+110001111111" class="mob-tel link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@devstudio.com" class="mob-email link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item">
+                  <a href="#" class="mob-soc-link link">
+                    <svg class="mob-soc-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="#" class="mob-soc-link link">
+                    <svg class="mob-soc-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="#" class="mob-soc-link link">
+                    <svg class="mob-soc-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="#" class="mob-soc-link link">
+                    <svg class="mob-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <ul class="site-nav list">
             <li><a href="./index.html" class="link current">Studio</a></li>
             <li><a href="./portfolio.html" class="link">Portfolio</a></li>
@@ -43,18 +107,18 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
     <!-- Main content -->
     <main>
       <!-- Hero -->
-      <!-- <section class="hero-section">
+      <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button button-hero" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- Our Features -->
       <section class="section big-section">
         <div class="container big-container">
@@ -363,10 +427,10 @@
       </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-wrap">
-          <a href="./index.html" class="logo"
+          <a href="./index.html" class="header-logo"
             >Web<span class="span-footer">Studio</span></a
           >
           <p class="footer-text">
@@ -422,7 +486,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -507,5 +571,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
