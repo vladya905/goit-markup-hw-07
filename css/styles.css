@@ -238,7 +238,7 @@ body {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-section {
-    background-image: var(--bg-grad), url(../images/hero/hero-mob-2x.jpg);
+    background-image: var(--bg-gradient), url(../images/hero/hero-mob-2x.jpg);
   }
 }
 .hero-title {
@@ -248,7 +248,7 @@ body {
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
+  width: 100%;
   text-align: center;
   align-items: center;
 }
@@ -364,7 +364,7 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  width: 190px;
+  width: 100%;
   height: 88px;
   border: 1px solid var(--light-slate-color);
   border-radius: 4px;
@@ -417,6 +417,7 @@ body {
 .soc-title {
   color: var(--primary-white);
   text-align: center;
+  font-weight: 500;
 }
 .soc-footer-list {
   display: flex;
@@ -454,15 +455,16 @@ body {
 }
 .footer-input {
   border: 1px solid var(--primary-white);
-  opacity: 0.3;
   border-radius: 4px;
   background-color: transparent;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
-  width: 398px;
+  width: 100%;
   margin: 0 auto;
   height: 40px;
+  padding: 16px;
+  letter-spacing: 0.04em;
 }
 .footer-form-wrap {
   display: flex;
@@ -668,8 +670,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
-  width: 408px;
-  height: 584px;
+  width: 392px;
+  height: 586px;
   background-color: var(--modal-color);
   border-radius: 4px;
   padding: 24px;

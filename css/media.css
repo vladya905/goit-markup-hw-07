@@ -1,3 +1,15 @@
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 90%;
+    height: auto;
+  }
+  .mob-tel {
+    font-size: 24px;
+  }
+  .mob-soc-list {
+    gap: 24px;
+  }
+}
 /*! --------------------------MOBILE-------------------------- */
 @media screen and (min-width: 480px) {
   .container {
@@ -20,16 +32,20 @@
 /*! --------------------------TABLET-------------------------- */
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 582px;
+    min-width: 552px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .container.big-container {
     min-width: 736px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .container.header-container {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .menu-button {
     display: none;
@@ -47,7 +63,7 @@
     margin-right: 120px;
   }
   .section {
-    padding: 108px 96px;
+    padding: 96px 108px;
   }
   .section.big-section {
     padding: 96px 16px;
@@ -61,13 +77,16 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-section {
-      background-image: var(--bg-grad), url(../images/hero/hero-tab-2x.jpg);
+      background-image: var(--bg-gradient), url(../images/hero/hero-tab-2x.jpg);
     }
   }
   .hero-title {
     margin-bottom: 36px;
     font-size: 56px;
     width: 496px;
+  }
+  .section-subtitle-mob {
+    text-align: left;
   }
   .feauters-list {
     row-gap: 72px;
@@ -88,6 +107,7 @@
   .team-list {
     row-gap: 64px;
     column-gap: 24px;
+    justify-content: normal;
   }
   .team-item:not(:last-child) {
     margin-bottom: 0;
@@ -104,7 +124,7 @@
     height: 88px;
   }
   .footer {
-    padding: 96px 93px;
+    padding: 96px 108px;
   }
   .footer-container {
     justify-content: left;
@@ -125,6 +145,10 @@
   .footer-form {
     margin-left: 0;
     margin-right: auto;
+  }
+  .modal {
+    width: 408px;
+    height: 584px;
   }
 }
 /*! --------------------------PC-------------------------- */
@@ -147,6 +171,9 @@
   .header-container {
     align-items: center;
   }
+  .header-logo {
+    margin-right: 76px;
+  }
   .header-navigation {
     display: flex;
     max-width: 50%;
@@ -157,14 +184,13 @@
   .hero-section {
     background-image: var(--bg-gradient), url(../images/hero/hero-pc-1x.jpg);
     max-width: 1440px;
-    height: 600px;
     padding: 188px 0;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-section {
-      background-image: var(--bg-grad), url(../images/hero/hero-pc-2x.jpg);
+      background-image: var(--bg-gradient), url(../images/hero/hero-pc-2x.jpg);
     }
   }
   .hero-title {
@@ -203,13 +229,21 @@
   }
   .team-list {
     gap: 24px;
+    justify-content: center;
   }
-  .team-item {
-    width: calc((100% - 72px) / 4);
+  .feauters-list {
+    justify-content: center;
+  }
+  .work-list {
+    justify-content: center;
+  }
+  . .team-item {
+    /* width: calc((100% - 72px) / 4); */
   }
   .team-item:not(:last-child) {
     margin-bottom: 0;
   }
+
   .customers-link {
     gap: 24px;
   }
@@ -222,6 +256,9 @@
   .footer-container {
     flex-wrap: nowrap;
     justify-content: center;
+  }
+  .soc-title {
+    text-align: left;
   }
   .footer-input {
     opacity: 1;
