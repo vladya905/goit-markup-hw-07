@@ -264,9 +264,7 @@
   .work-list {
     justify-content: center;
   }
-  . .team-item {
-    /* width: calc((100% - 72px) / 4); */
-  }
+
   .team-item:not(:last-child) {
     margin-bottom: 0;
   }
