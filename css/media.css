@@ -55,19 +55,22 @@
   }
   .address-nav {
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 16px;
+    flex-direction: column;
+    gap: 24px;
     justify-content: right;
-    margin-top: -16px;
-  }
-  .address-nav.link {
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.17px;
     letter-spacing: 0.04em;
   }
+  .address-nav.link {
+    font-weight: 400;
+    font-size: 12px;
+  }
   .mail.link {
     margin-bottom: 12px;
+  }
+  .container.header-container {
+    padding-top: 0;
   }
   .header-navigation {
     justify-content: left;
@@ -142,6 +145,9 @@
   .footer-container {
     justify-content: left;
   }
+  .soc-title {
+    text-align: left;
+  }
   .footer-wrap {
     margin-left: 0;
     text-align: left;
@@ -174,6 +180,7 @@
   }
   .container.header-container {
     max-width: 1158px;
+    padding-top: 0;
   }
   .container.big-container {
     min-width: 1158px;
@@ -193,6 +200,13 @@
   }
   .address-nav {
     display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    margin-top: 0;
+    gap: 40px;
   }
   .hero-section {
     background-image: var(--bg-gradient), url(../images/hero/hero-pc-1x.jpg);
